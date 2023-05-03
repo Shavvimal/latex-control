@@ -1,0 +1,4 @@
+\nomenclatureentry{a$T$@[{$T$}]\begingroup Temperature \nomunit{\si{K}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{a$x_{tol}$@[{$x_{tol}$}]\begingroup Conversion of Toluene \nomunit{\si{-}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{a$\rho_{c}$@[{$\rho_{c}$}]\begingroup Density of Catalyst \nomunit{\si{g \cdotp m^{-3}}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{a$\epsilon$@[{$\epsilon$}]\begingroup Void Fraction of Catalyst \nomunit{\si{-}}\nomeqref {0}|nompageref}{1}

@@ -1,0 +1,68 @@
+\section{Selection of the Detailed Design}
+\label{sec:design_selection}
+
+% HOW THINGS WERE DECIDED 
+% Choice of separator:
+% a) Why is this separation crucial in the overall process 
+% b) How did you choose the type of process? What, if any, alternatives were considered and why were they rejected?
+% c) are there any novel or especially difficult aspects to the separation
+
+\begin{itemize}
+    \item Explain why crystallisation is the crucial step in our entire separation process - our USP is the higher-than-average cis:trans ratio as well as a very high promised purity - crystallisation is essential to achieve these goals 
+    \item Explain the feed coming out of final reactor for both permethrin and cypermethrin (include a brief sentence about decanter & flash being required before crystallisation even though it's not part of the detailed design but it's still the same step)
+    \item Impurities remain in the system along with the desired product, permethrin and cypermethrin - permethrin stream is exactly the same as what exits final reactor
+    \item Due to the desire to sell to both the pharmaceutical and agricultural sectors of industry, the minimum purity has to be at least xx\% to be sold to the former
+    \item To finalise the overall separation system to obtain xx\% and xx\% purity permethrin and cypermethrin respectively as products, a combination of techniques were employed.
+\end{itemize}
+% WHAT WAS DECIDED AND WHY (have more why when writing)
+
+\subsection{Selection of Employed Separation Technique}
+\begin{itemize}
+    \item Traditionally, pharmaceutical processes often employ crystallisation, chromatography, distillation and filtration in order to meet the high purities specified by regulations
+    \item A high final purity was required, due to the desire to sell to both the agricultural and pharmaceutical segments simultaneously (another aspect of modularity!) 
+    \item Straight forward separations such as a large difference in boiling points = distillation column but conducted Jaksland analysis on several less straight forward steps of the separation process to find feasible separation pathways, including this step (may want to include a table of key properties for this decision)
+    \item final decision between crystalliser and precipitator (precipitator advantages = almost instantaneous, high likelihood of oiling out, easy to separate and no seeding required, however due to this there is no separation between cis and trans and a larger energy consumption as more water is required for the system which is difficult to separate from methanol) 
+    \item This resulted in crystallisation being favoured as the final step (also modularity enforced due to the similar melting points of both permethrin and cypermethrin and want to take advantage of this)
+    \item Other techniques considered were chromatography but this is cost-intensive with intense solvent consumption as well as difficult to scale-up to commercial/industrial levels. Distillation was not picked due to smaller difference in boiling points, moreover there was a high possibility of thermal decomposition of the product at the temperatures that would have been used. An additional consideration was the possibility of enantiomer switching and want to avoid trans becoming cis, however this risk was deemed low, especially at the temperatures considered in the entire final separation sequence. Membranes are an attractive option for clean, energy efficient separation however membrane liquids are often instable over long periods of time and require several stages to reach high purities - also risk of membrane fouling
+   \item Crystallisation was deemed the most favoured technique due to the following advantanges: ... 
+\end{itemize}
+
+\subsection{Detailed Design Separation Units (change title)}
+\label{sec:detailed_sep_unit}
+\begin{itemize}
+    \item Modularity considerations 
+    \item Findings from patents, what they showed & how we incorporated / modified them (briefly)
+    \item The units which make up our crystalliser design ( crystalliser modelled as 3 continuous stirred tanks with each stage at a different temperature to follow the solubility curve, followed by a filter to remove the solid product with the liquid stream going on to two distillation columns to separate water and methanol from the impurities in the first one and the separation of water and methanol in the second (azeotrope considerations?) recyling both MeOH and H2O to their respective CSTs)
+    \item  Detailed design conducted on xx part (if not all). Mechanical design also carried out on this unit.
+    \item Making crystallisation continuous 
+    \item Any novel/especially difficult aspects of design
+    \end{itemize}
+    
+\subsubsection{Selection of Solvent}
+
+Format table correctly, ensure it matches with other tables - check if headings should capitalise each word & caption table
+
+Considered a greener alternative for methanol as the solvent (ich class 2), however it proved to be the best choice after holistically looking at multiple solvents. Deciding factors with heaviest weightings are solubility and the formation of an azeotrope with water as this will make solvent recovery and separation for recycle more difficult further downstream (requiring azeotropic distillation, additionally more energy-intensive). The toxicity \& environmental concerns associated with methanol were decidedly outweighed by its no azeotrope formation as well as the fact that none of the considered solvents proved to have a distinct advantage (e.g. all similar ratings in terms of safety and environment).  
+
+\begin{table}[h]
+\begin{tabular}{cccccccc}
+\hline
+\multicolumn{1}{|c|}{Solvent}     & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Solubility \\ Parameter\\ (MPa^{1/2})\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Binary Water\\  Azeotrope\end{tabular}}                                & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Environmental\\ Considerations\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Safety\\ Considerations\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Boiling \\ Point (K)\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}ICH \\ Class\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Molecular \\ Weight\end{tabular}} \\ \hline
+\multicolumn{1}{|c|}{Methanol}    & \multicolumn{1}{c|}{29.6}                                                                      & \multicolumn{1}{c|}{none}                                                                                             & \multicolumn{1}{c|}{FILL IN}                                                                & \multicolumn{1}{c|}{Health (2), Flammability (3), physical hazard (0)}               & \multicolumn{1}{c|}{337.85}                                                       & \multicolumn{1}{c|}{2}                                                    & \multicolumn{1}{c|}{32.04}                                                       \\ \hline
+\multicolumn{1}{|c|}{Ethanol}     & \multicolumn{1}{c|}{26.5}                                                                      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Boils at 78.2 C, volume composition\\ of 95\% alcohol\end{tabular}}    & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{Health (2), Flammability (3), physical hazard (0)}               & \multicolumn{1}{c|}{351.55}                                                       & \multicolumn{1}{c|}{3}                                                    & \multicolumn{1}{c|}{46.07}                                                       \\ \hline
+\multicolumn{1}{|c|}{Propanol}    & \multicolumn{1}{c|}{24.5}                                                                      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Boils at 87.7 C, volume composition\\ of 71.7\% alcohol\end{tabular}}  & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{Health (1), Flammability (3), physical hazard (0)}               & \multicolumn{1}{c|}{370.45}                                                       & \multicolumn{1}{c|}{3}                                                    & \multicolumn{1}{c|}{60.1}                                                        \\ \hline
+\multicolumn{1}{|c|}{Isopropanol} & \multicolumn{1}{c|}{23.5}                                                                      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Boils at 80.4\%, volume composition \\ of 87.7\% alcohol\end{tabular}} & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{Health (1),   Flammability (3), Instability (0)}                   & \multicolumn{1}{c|}{355.65}                                                       & \multicolumn{1}{c|}{3}                                                    & \multicolumn{1}{c|}{60.1}                                                        \\ \hline
+\multicolumn{1}{l}{}              & \multicolumn{1}{l}{}                                                                           & \multicolumn{1}{l}{}                                                                                                  & \multicolumn{1}{l}{}                                                                        & \multicolumn{1}{l}{}                                                                 & \multicolumn{1}{l}{}                                                              & \multicolumn{1}{l}{}                                                      & \multicolumn{1}{l}{}                                                            
+\end{tabular}
+\end{table}
+    
+\subsubsection{Selection of Crystalliser}
+%not sure if this should go under "selection of separation technique" or slightly more above - shouldn't end this section with this basically 
+
+   \begin{itemize}
+  %remember to relate back to our specific compounds and to our case in particular, think it would be good to have a key properties table so we can refer to it a couple times 
+    \item Once continuous crystallisation was deemed to be the best separation technique, many types of crystallisation were considered and cooling crystallisation using antisolvent seeding was determined to be the optimal scenario. This is due to ... 
+    \item Other types of crystallisation considered include a melt crystalliser although the likelihood of fouling is significant since the system is still highly viscous. Evaporative crystallisation was not picked since methanol's boiling point is higher than permethrin's melting point.
+    \end{itemize}
+    
+

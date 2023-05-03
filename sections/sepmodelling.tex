@@ -1,0 +1,66 @@
+\section{Looped MSMPR Crystalliser Modelling}
+\label{sec:sep_modelling}
+%Key Questions / criteria: 
+% a) Clearly state the separator design sepcifications / objectives
+% b) Detail your design calculations / modelling 
+% c) Include sources & reliability of equilibrium and/or kinetic data used 
+% d) If thermodynamic/kinetic models have been used, how have they been validated 
+% e) How have you allowed for uncertainty in the modelling?
+% f) What are the conclusions of the modelling?
+
+TRL --> milling \& MSMPR (both industrially available)\\
+Looping method very novel
+
+\subsection{Solubility Estimations}
+Solubility equation - use handbook of industrial crystallisation to explain how we arrived at our equation \& any assumptions involved.
+
+\subsubsection{Activity Coefficient Estimations}
+\begin{itemize}
+    \item Explain/ mention some most commonly used models in pharma (NRTL, Unifac, CosmoSac, Hansen, NRTLSac)
+    \item Justify why we used NRTL for activity coeff (takes into account non-ideality in liquid phase - water \& methanol mixing is non-ideal due to the presence of interactions like hydro[hobicity and hydrophilicity)
+    \item input, write and briefly explain NRTL equations 
+    \item maybe briefly point out/mention that solutes had the same coefficients as activity coefficient is a weak function of temperature but largely a function of composition and solutes were all present in small amounts compared to the solvents
+    \item assumed for cypermethrin that cis and trans activity coefficient are the same (this was proven to be the case for permethrin as well as all solutes had the same - tie into bullet above)
+\end{itemize}
+
+\subsubsection{Enthalpy of Fusion Estimation}
+\begin{itemize}
+\item Jobak method since no other way.
+\item Melting temperatures mostly from literature (maybe move this to an above section) apart from trans cypermethrin (do group contribution on this).
+\item Distinguish and justify the differences in physical properties (enthalpy of fusion as well as melting point) between cis and trans for both cypermethrin and permethrin, backed up by literature (Klaus will want this.)
+\end{itemize}
+
+\subsubsection{Melting Point Estimation}
+\begin{itemize}
+\item Difference in boiling temperature between cis and trans is due to the dipole-dipole and London dispersion forces.
+\item Cis is a polar molecule due to the position of group on the same side (non-symmetrical) and therefore has larger IMF
+\item Larger IMF \textrightarrow more heat needed to for bond breakage \textrightarrow higher BP
+\item Trans pack more efficiently in solid, therefore freezing easier, arrange easier, higher melting point (higher melting point means easier to freeze)
+\end{itemize}
+
+\subsubsection{Solubility Curves}
+How does solubility curve modelling differ for antisolvent addition and seeding? \\
+How did we account for this? \\
+How did we account for any errors? \\ What assumptions did we make?
+
+\subsubsection{MSMPR Assumptions}
+\begin{itemize}
+\item Continuous, steady flow and steady state
+\item Perfect mixing of magma
+\item No classification of crystals
+\item Uniform degree of supersaturation of magma
+\item No crystals in feed
+\item No crystal breakage
+\item Uniform temperature
+\item Mother liquor in product magma is equilibrium with crystals
+\item Nucleation rate is constant, uniform and due to secondary nucleation by crystal product
+\item PSD is uniform for the crystalliser and equal to that in magma
+\item All crystals have the same shape
+\end{itemize}
+
+\subsection{Seeding Considerations (move section to appropriate place)} 
+\begin{itemize}
+    \item "In'house" seeding process to obtain the seeds needed for selective crystallisation to separate the cis and trans
+    \item Using HPLC chromatography to separate the four isomers of both cis and trans cypermethrin respectively to get a small proportion of very pure isomer - this is then placed into mother liquid and allowed to grow in a batch reactor. Once it has reached a suitable size (put amount), this is then crushed and placed back in the mother liquid and the process is repeated until the 8 separate isomers seeds are suitable for our crystallisation process
+    \item For permethrin, both cis and trans seeds will be bought in small quantities. 
+\end{itemize}
